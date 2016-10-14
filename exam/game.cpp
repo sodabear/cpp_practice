@@ -49,6 +49,7 @@ int main(){
 	
 	
 	while(total > 0){
+		total--;
 		//read next t
 		for(int i =1; i <=6; i++){
 			cin >> A[i];
@@ -87,7 +88,7 @@ int main(){
 			}
 			cout << "不求獎品，開心就好"<<endl;
 		}
-		total--;
+		
 	}
 	return 0;			
 }
