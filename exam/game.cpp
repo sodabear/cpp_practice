@@ -53,7 +53,6 @@ int main(){
 		for(int i =1; i <=6; i++){
 			cin >> A[i];
 		}
-		
 		//cout << "1"<<endl;
 		if(Is_DuiTang(6, A)){
 		//cout << "2"<<endl;
@@ -62,31 +61,29 @@ int main(){
 		//cout << "3"<<endl;	
 			if(numberOfX(4, A) == 4){
 				if(numberOfX(1,A) == 2){
-					cout <<"狀元插金花"<<endl;
-					
+					cout <<"狀元插金花"<<endl;				
 				}else{
 					cout <<"狀元"<<endl;
 				}
-				break;
 			}else if(numberOfX(4,A) == 3){
 				cout <<"三紅"<<endl;
-				break;		
+				continue;		
 			}else if(fourOfX(A)){
 				//cout << " inside"<<endl;
 					if(numberOfX(4, A) == 2){
 						cout << "四進帶二舉"<<endl;
-						break;
+						continue;
 					}
 					if(numberOfX(4, A) == 1){
 						cout << "四進帶一秀"<<endl;
-						break;
+						continue;
 					}	
 			}else if(numberOfX(4,A) == 2){
 				cout <<"二舉"<<endl;
-				break;		
+				continue;		
 			}else if(numberOfX(4,A) == 1){
 				cout <<"一秀"<<endl;
-				break;
+				continue;
 			}
 			cout << "不求獎品，開心就好"<<endl;
 		}
