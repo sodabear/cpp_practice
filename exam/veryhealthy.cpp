@@ -6,13 +6,15 @@ int main(){
 	cin >> num >> day;
 	int total = 0;
 	while(num > 0){
-		int p,k;
-		cin >> p >> k;
-		int ans = 1;
-		for(int j=0; j< day; j++){
-			ans = ans*k;
-		}	
-		total = total + p*ans;
+		int c,k;
+		cin >> c >> k;
+		//odd * odd * odd= odd
+		// even * even *even= even
+		if(c%2 ==0 or k % 2 ==0){
+			total = total + 0;
+		}else{
+			total = total + 1;
+		}		
 		num--;
 	}
 	cout << total % 2 << endl;
