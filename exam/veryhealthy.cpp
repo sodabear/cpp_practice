@@ -5,6 +5,14 @@ int num,day =0;
 int main(){
 	cin >> num >> day;
 	int total = 0;
+	if(day == 0){
+		for(int i = 0; i < num; i--){
+			int c;
+			cin >> c;
+			cout << c % 2 << endl;
+			return 0;
+		}	
+	}	
 	while(num > 0){
 		int c,k;
 		cin >> c >> k;
