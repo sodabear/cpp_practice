@@ -41,7 +41,7 @@ int main(){
 		//}	
 		//cout << "~~~~~~~~";
 		//cout << s[c][d] << " " << s[a][b] << " "<<s[c][b]<<"  "<<s[a][d]<<"  "<<endl;
-		//cout << (1234 + sum) % 1234 <<endl;
+		cout << (1234 + sum) % 1234 <<endl;
 	}	
 	
 	
