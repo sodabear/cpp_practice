@@ -8,8 +8,7 @@ int main(){
 	//read matrix
 		for(int i= 1;i <= n; i++){
 		for(int j = 1; j <=m;j++){
-			cin >> z[i][j];
-			
+			cin >> z[i][j];	
 		}	
 		}	
 	
@@ -22,9 +21,7 @@ int main(){
 				}
 			}
 			s[i][j] = sum % 1234;
-			//cout << s[i][j] << " " ;		
 		}
-		cout <<endl;
 	}
 	
 	
