@@ -22,7 +22,7 @@ int main(){
 				}
 			}
 			s[i][j] = sum % 1234;
-			cout << s[i][j] << " " ;		
+			//cout << s[i][j] << " " ;		
 		}
 		cout <<endl;
 	}
