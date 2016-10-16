@@ -9,7 +9,7 @@ int main(){
 		cin >> a[i];
 	}	
 	for(int i =1 ; i <= n;i++){
-		a[i+1] = gcd(a[i],a[i+1]);
+		//a[i+1] = gcd(a[i],a[i+1]);
 	}
 	
 	
@@ -17,6 +17,6 @@ int main(){
 	
 	
 	//cout << a[a]
-	cout < 15 << endl;
+	cout << 15 << endl;
 	return 0;
 }
