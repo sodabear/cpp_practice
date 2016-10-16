@@ -8,13 +8,32 @@ int main(){
 		// n is number of panzi
 		cin >> n >> d;
 		int ci,ki;
+		// day = 0
+		if(d == 0){
+			
+			for(int i = 1; i <= n; i++){
+				cin>>ci>>ki;
+				pan[i] = ((ci %4) * (ki % 4)) % 4;
+			}
+			int sum = 0; 
+			for(int i = 1; i <= n;i++){
+				sum = (sum + pan[i]) %4;
+			}
+			cout << sum <<endl;
+			return 0;
+
+		
+		}
+		
+		
+		//day not equal 0	
 		for(int i = 1; i <= n; i++){
 			int temp = 0;
 			cin>>ci>>ki;
-		// if d is even: ki even^even % 4 = 0
-		// if d is even: ki even^odd  % 4 = 2
-		// if d is odd:  ki odd^even  % 4 = 1
-		// if d is odd:  ki odd^odd   % 4 = 3
+		// ki  % 4 = 0
+		// ki  % 4 = 1
+		// ki  % 4 = 2
+		// ki  % 4 = 3
 			if(ki % 4 == 0){
 				 temp = 0;	
 			}else if(ki % 4 == 1){
