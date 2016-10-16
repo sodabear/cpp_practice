@@ -20,7 +20,7 @@ int main(){
 				sum = (sum % 1234 + z[j][k] % 1234) % 1234;
 			}
 		}	
-		cout << sum <<endl;
+		cout << (1234 + sum) % 1234 <<endl;
 		sum = 0;
 	}	
 	
