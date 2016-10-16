@@ -10,10 +10,9 @@ int main(){
 		int ci,ki;
 		// day = 0
 		if(d == 0){
-			
 			for(int i = 1; i <= n; i++){
 				cin>>ci>>ki;
-				pan[i] = ((ci %4) * (ki % 4)) % 4;
+				pan[i] = (ci %4) % 4;
 			}
 			int sum = 0; 
 			for(int i = 1; i <= n;i++){
