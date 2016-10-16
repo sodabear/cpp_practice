@@ -33,7 +33,7 @@ int main(){
 
 		for(int j = n-1-i; j > i; j--){
 			if(ans[j][i] == 0){
-				ans[j][i] = c++;
+				ans[j][i] = +;
  			}
 		}
 	}
