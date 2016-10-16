@@ -1,28 +1,25 @@
 #include <iostream>
 using namespace std;
+int n,m,q;
+int z[1001][1001] = {};
+int s[1001][1001] = {};
 int main(){
-	int n,m,q;
-	int z[1001][1001] = {};
-	int s[1001][1001] = {};
 	cin >> n >> m >> q;
 	//read matrix
-		for(int i= 1;i <= n; i++){
-		for(int j = 1; j <=m;j++){
-			cin >> z[i][j];	
-		}	
-		}	
-	
 	for(int i= 1;i <= n; i++){
-		for(int j = 1; j <=m;j++){
-			int sum =0;
-			for(int k = 1; k <=i; k++){
-				for(int l =1; l <= j; l++){
-					sum = (sum + z[k][l] % 1234) % 1234 ;
-				}
-			}
-			s[i][j] = sum % 1234;
+			for(int j = 1; j <=m;j++){
+				cin >> z[i][j];
 		}
 	}
+	// need two matrix, one store original value 
+	// the other store pre order sum
+	for(int i= 1;i <= n; i++){
+		for(int j = 1; j <=m;j++){
+			s[i][j] = (( (z[i][j] + s[i-1][j]) % 1234 + s[i][j-1]) %1234 - s[i-1][j-1]) %1234;
+		}	
+	}	
+	
+	
 	
 	
 	
